@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	Handler-Composer
-Summary:	XML::Handler-Composer - 
-Summary(pl):	XML::Handler-Composer - 
+Summary:	XML::Handler::Composer - another XML printer/writer/generator
+Summary(pl):	XML::Handler::Composer - jeszcze jeden modu³ do drukowania/pisania/generowania XML-a
 Name:		perl-XML-Handler-Composer
 Version:	0.01
 Release:	1
@@ -14,22 +14,22 @@ Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	38dbb960176ee73f66e6a3c9ded75647
+# Source0-md5:	e4c3fdd46e7ada0f9db326b493058d4d
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-XML-Parser >= 2.30
-BuildRequires:	perl-XML-RegExp
-BuildRequires:	perl-libwww
-BuildRequires:	perl-libxml >= 0.07
+BuildRequires:	perl-XML-UM
 %endif
 Obsoletes:	perl-libxml-enno
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+XML::Handler::Composer Perl module is similar to XML::Writer,
+XML::Handler::XMLWriter, XML::Handler::YAWriter etc. in that it
+generates XML output.
 
-%description -l pl
+#%description -l pl
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -53,8 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_vendorlib}/XML/Handler-Composer
-%{perl_vendorlib}/XML/Handler-Composer.pm
-%{perl_vendorlib}/XML/Handler-Composer/*.pm
-%{perl_vendorlib}/XML/Handler/*
+%{perl_vendorlib}/XML/Handler/Composer.pm
 %{_mandir}/man3/*
