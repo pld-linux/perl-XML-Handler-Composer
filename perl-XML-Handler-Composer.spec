@@ -3,8 +3,8 @@
 %bcond_without tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	Handler-Composer
+%define		pdir	XML
+%define		pnam	Handler-Composer
 Summary:	XML::Handler::Composer - another XML printer/writer/generator
 Summary(pl):	XML::Handler::Composer - jeszcze jeden modu³ do drukowania/pisania/generowania XML-a
 Name:		perl-XML-Handler-Composer
