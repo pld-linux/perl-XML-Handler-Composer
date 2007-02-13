@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Handler-Composer
 Summary:	XML::Handler::Composer - another XML printer/writer/generator
-Summary(pl.UTF-8):   XML::Handler::Composer - jeszcze jeden moduł do drukowania/pisania/generowania XML-a
+Summary(pl.UTF-8):	XML::Handler::Composer - jeszcze jeden moduł do drukowania/pisania/generowania XML-a
 Name:		perl-XML-Handler-Composer
 Version:	0.01
 Release:	1
