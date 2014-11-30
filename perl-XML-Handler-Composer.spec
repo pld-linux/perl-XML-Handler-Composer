@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	XML
 %define		pnam	Handler-Composer
+%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Handler::Composer - another XML printer/writer/generator
 Summary(pl.UTF-8):	XML::Handler::Composer - jeszcze jeden moduł do drukowania/pisania/generowania XML-a
 Name:		perl-XML-Handler-Composer
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	38dbb960176ee73f66e6a3c9ded75647
+URL:		http://search.cpan.org/dist/XML-Handler-Composer/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
