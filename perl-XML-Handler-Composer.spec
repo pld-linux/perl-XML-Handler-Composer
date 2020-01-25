@@ -4,7 +4,6 @@
 
 %define		pdir	XML
 %define		pnam	Handler-Composer
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Handler::Composer - another XML printer/writer/generator
 Summary(pl.UTF-8):	XML::Handler::Composer - jeszcze jeden moduł do drukowania/pisania/generowania XML-a
 Name:		perl-XML-Handler-Composer
