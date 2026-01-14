@@ -8,7 +8,7 @@ Summary:	XML::Handler::Composer - another XML printer/writer/generator
 Summary(pl.UTF-8):	XML::Handler::Composer - jeszcze jeden moduł do drukowania/pisania/generowania XML-a
 Name:		perl-XML-Handler-Composer
 Version:	0.01
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
